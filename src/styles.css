@@ -1,12 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
-h1 h2 h3 h4 h5 {
-    font: Raleway
+.navbar {
+    background: #F28F3B;
 }
 
-p {
-    font: Roboto;
-    font-size: 14px;
-    font-family: sans-serif;
-    text-align: center
+body {
+    background: #588B8B;
+    color: white;
+}
+
+footer {
+    background: #3D7E7E;
+}
+
+.center {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+hr {
+    background-color: white;
 }
