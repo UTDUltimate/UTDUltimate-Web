@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+h1 h2 h3 h4 h5 {
+    font: Raleway
+}
+
+p {
+    font: Roboto;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: center
+}
