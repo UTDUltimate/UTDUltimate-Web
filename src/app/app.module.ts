@@ -7,6 +7,10 @@ import { RosterPageComponent } from "./roster-page/roster-page.component";
 import { HomeComponent } from "./Home/home.component";
 import { AboutPageComponent } from "./about-page/about-page.component";
 import { FooterComponent } from "./footer/footer.component";
+import { TeamHeaderComponent } from "./roster-page/team-header/team-header.component";
+import { HttpClientModule } from "@angular/common/http";
+import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { InMemoryDataService } from "./services/in-memory-data.service";
 
 @NgModule({
   declarations: [
@@ -15,8 +19,16 @@ import { FooterComponent } from "./footer/footer.component";
     HomeComponent,
     AboutPageComponent,
     FooterComponent,
+    TeamHeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+      dataEncapsulation: false,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
