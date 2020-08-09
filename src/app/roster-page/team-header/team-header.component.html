@@ -1,0 +1,7 @@
+<ul class="nav justify-content-center">
+  <li *ngFor="let team of teams" class="nav-item">
+    <a class="nav-link" id="team-nav-custom" routerLink="/teams/{{ team.id }}">
+      <span>{{ team.name }}</span> Roster
+    </a>
+  </li>
+</ul>
