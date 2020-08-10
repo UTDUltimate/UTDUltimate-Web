@@ -1,3 +1,15 @@
 <div id="main-container">
-  <app-team-header></app-team-header>
+  <ul class="nav justify-content-center">
+    <li
+      *ngFor="let team of teams"
+      [class.selected]="team === selectedTeam"
+      class="nav-item"
+      (click)="onSelect(team)"
+    >
+      <a class="nav-link" id="team-nav-custom">
+        <span>{{ team.name }}</span> Roster
+      </a>
+    </li>
+  </ul>
+  <app-roster-list [team]="selectedTeam"></app-roster-list>
 </div>
