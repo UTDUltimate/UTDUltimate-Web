@@ -1,4 +1,4 @@
-<div id="main-container">
+<div id="main-container" class="container-fluid">
   <ul class="nav justify-content-center">
     <li
       *ngFor="let team of teams"
@@ -12,4 +12,5 @@
     </li>
   </ul>
   <app-roster-list [team]="selectedTeam"></app-roster-list>
+  <app-background-comets></app-background-comets>
 </div>

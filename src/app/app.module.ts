@@ -11,6 +11,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./services/in-memory-data.service";
 import { RosterListComponent } from "./roster-page/roster-list/roster-list.component";
+import { BackgroundCometsComponent } from './background-comets/background-comets.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RosterListComponent } from "./roster-page/roster-list/roster-list.compo
     AboutPageComponent,
     FooterComponent,
     RosterListComponent,
+    BackgroundCometsComponent,
   ],
   imports: [
     BrowserModule,

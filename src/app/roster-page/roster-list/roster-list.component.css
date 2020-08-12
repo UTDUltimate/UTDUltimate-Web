@@ -3,7 +3,8 @@ h3 {
   color: #fffffc;
 }
 
-.roster {
+.roster,
+p {
   font: 14px 'Roboto', sans-serif;
   color: #fffffc;
 }

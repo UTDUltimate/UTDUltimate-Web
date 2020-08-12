@@ -1,8 +1,10 @@
 #main-container {
-  width: 100vw;
+  background-color: #C8553D;
   min-height: 100vh;
   height: 100%;
-  background-color: #C8553D;
+
+  overflow: hidden;
+  position: relative;
 }
 
 #team-nav-custom {
