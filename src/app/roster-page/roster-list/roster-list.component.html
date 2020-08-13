@@ -1,16 +1,18 @@
-<div *ngIf="team; else elseBlock" class="container span4 mt-4">
-  <h3>{{ team.name | uppercase }} Roster</h3>
-  <ul class="list-group list-group-flush">
-    <li
-      *ngFor="let player of team.roster"
-      class="list-group-item"
-      style="background-color: #c8553d;"
-    >
-      <a class="roster" routerLink="/players/{{ player.id }}">
-        <span>{{ player.name }}</span>
-      </a>
-    </li>
-  </ul>
+<div *ngIf="team; else elseBlock" class="container mt-4">
+  <div id="roster-list-container">
+    <h3>{{ team.name | uppercase }} Roster</h3>
+    <ul class="list-group list-group-flush">
+      <li
+        *ngFor="let player of team.roster"
+        class="list-group-item"
+        style="background-color: #c8553d;"
+      >
+        <a class="roster" routerLink="/players/{{ player.id }}">
+          <span>{{ player.name }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 <ng-template #elseBlock
   ><div class="container span4 mt-4">

@@ -8,3 +8,26 @@ p {
   font: 14px 'Roboto', sans-serif;
   color: #fffffc;
 }
+
+#roster-list-container {
+  width: 100%;
+  animation: slide-from-right 2s 0s forwards;
+}
+
+@keyframes slide-from-right {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+
+  /* 100% {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+}
