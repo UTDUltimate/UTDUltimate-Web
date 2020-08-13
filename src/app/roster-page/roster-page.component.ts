@@ -1,6 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { Team } from "../models/team";
-import { TeamService } from "../services/team.service";
 
 @Component({
   selector: "app-roster-page",
@@ -8,20 +6,7 @@ import { TeamService } from "../services/team.service";
   styleUrls: ["./roster-page.component.css"],
 })
 export class RosterPageComponent implements OnInit {
-  teams: Team[];
-  selectedTeam: Team;
+  constructor() {}
 
-  constructor(private teamService: TeamService) {}
-
-  ngOnInit(): void {
-    this.getTeams();
-  }
-
-  getTeams(): void {
-    this.teamService.getTeams().subscribe((teams) => (this.teams = teams));
-  }
-
-  onSelect(team: Team): void {
-    this.selectedTeam = team;
-  }
+  ngOnInit(): void {}
 }
