@@ -2,8 +2,8 @@
   position: fixed;
   width: 474.05px;
   height: 477.44px;
-  left: 15vw;
-  top: 90vh;
+  left: 5vw;
+  top: 50vh;
 
   mix-blend-mode: soft-light;
   /* opacity: 0.17; */
@@ -12,7 +12,7 @@
   --shade: 0.16;
   --xShift: -2rem;
   --yShift: 5rem;
-  animation: cometMove 30s 15s backwards infinite;
+  animation: cometMove 30s 10s backwards infinite;
 }
 
 #l-comet-black {
@@ -52,15 +52,15 @@
   position: fixed;
   width: 397px;
   height: 366px;
-  left: 85vw;
-  top: -10vh;
+  left: 65vw;
+  top: 10vh;
 
   mix-blend-mode: soft-light;
   /* transform: rotate(-25.19deg); */
-  --deg: 165deg;
+  --deg: 270deg;
   --shade: 0.13;
   --xShift: 2rem;
-  --yShift: -5rem;
+  --yShift: 5rem;
   animation: cometMove 30s 12s backwards infinite;
 }
 
