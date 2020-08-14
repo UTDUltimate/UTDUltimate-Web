@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Home/home.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -13,8 +14,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutPageComponent
-    
+    AboutPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
