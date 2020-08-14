@@ -13,6 +13,9 @@ import { InMemoryDataService } from "./services/in-memory-data.service";
 import { RosterListComponent } from "./roster-page/roster-list/roster-list.component";
 import { BackgroundCometsComponent } from './background-comets/background-comets.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,10 +29,13 @@ import { BackgroundCometsComponent } from './background-comets/background-comets
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent],
