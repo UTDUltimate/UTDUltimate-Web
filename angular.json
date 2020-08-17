@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "ultimatewebsite"
+  "defaultProject": "ultimatewebsite",
+  "cli": {
+    "analytics": false
+  }
 }

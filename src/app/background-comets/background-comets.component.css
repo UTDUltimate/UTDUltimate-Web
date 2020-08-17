@@ -1,0 +1,85 @@
+#s-comet-black {
+  position: fixed;
+  width: 474.05px;
+  height: 477.44px;
+  left: 5vw;
+  top: 50vh;
+
+  mix-blend-mode: soft-light;
+  /* opacity: 0.17; */
+  /* transform: rotate(16.04deg); */
+  --deg: 86.04deg;
+  --shade: 0.16;
+  --xShift: -2rem;
+  --yShift: 5rem;
+  animation: cometMove 30s 10s backwards infinite;
+}
+
+#l-comet-black {
+  position: fixed;
+  width: 729px;
+  height: 660px;
+  left: 60vw;
+  top: 200px;
+
+  mix-blend-mode: soft-light;
+  /* opacity: 0.17; */
+  /* transform: rotate(16.04deg); */
+  --deg: 10deg;
+  --shade: 0.16;
+  --xShift: -2rem;
+  --yShift: 4rem;
+  animation: cometMove 30s -5s backwards infinite;
+}
+
+#s-comet-white {
+  position: fixed;
+  width: 397px;
+  height: 366px;
+  left: 10vw;
+  top: 14vh;
+
+  mix-blend-mode: soft-light;
+  /* transform: rotate(-25.19deg); */
+  --deg: -25.19deg;
+  --shade: 0.2;
+  --xShift: 5rem;
+  --yShift: 2rem;
+  animation: cometMove 30s 0s backwards infinite;
+}
+
+#l-comet-white {
+  position: fixed;
+  width: 397px;
+  height: 366px;
+  left: 65vw;
+  top: 10vh;
+
+  mix-blend-mode: soft-light;
+  /* transform: rotate(-25.19deg); */
+  --deg: 270deg;
+  --shade: 0.13;
+  --xShift: 2rem;
+  --yShift: 5rem;
+  animation: cometMove 30s 12s backwards infinite;
+}
+
+@keyframes cometMove {
+  from {
+    opacity: 0;
+    transform: rotate(var(--deg));
+  }
+
+  40% {
+    opacity: var(--shade);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(var(--xShift), var(--yShift)) rotate(var(--deg));
+  }
+}

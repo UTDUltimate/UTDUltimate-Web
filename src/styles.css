@@ -7,6 +7,7 @@
 body {
     background: #588B8B;
     color: white;
+    overflow-x: hidden;
 }
 
 footer {
@@ -30,3 +31,4 @@ hr {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
