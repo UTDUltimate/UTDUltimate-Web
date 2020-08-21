@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FAQ } from './faq';
 
 @Component({
   selector: 'app-about-page',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-page.component.css']
 })
 export class AboutPageComponent implements OnInit {
+  faqs = new FAQ().data;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 }
