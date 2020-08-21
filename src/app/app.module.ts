@@ -15,6 +15,7 @@ import { BackgroundCometsComponent } from './background-comets/background-comets
 import {NavbarComponent} from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -33,11 +34,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      dataEncapsulation: false,
+      dataEncapsulation: false
     }),
     BrowserAnimationsModule,
     MatExpansionModule
-  ],
+  ],schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent],
 })

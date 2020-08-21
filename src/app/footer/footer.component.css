@@ -16,8 +16,13 @@
 }
 
 .yt {
+  position: relative;
+  left: -59px;
+}
+
 .fb {
   position: relative;
+  left: -20px;
 }
 
 .twtr {
