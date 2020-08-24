@@ -1,0 +1,36 @@
+.background {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #3D7E7E;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.icon-size {
+  width: 39px;
+  height: 39px;
+}
+
+.yt {
+  position: relative;
+  left: -59px;
+}
+
+.fb {
+  position: relative;
+  left: -20px;
+}
+
+.twtr {
+  position: relative;
+  left: 20px;
+}
+
+.ig {
+  position: relative;
+  left: 59px;
+}
