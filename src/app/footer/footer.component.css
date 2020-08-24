@@ -1,15 +1,4 @@
 .background {
-<<<<<<< HEAD
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background-color: #3D7E7E;
-  display: flex;
-  justify-content: center;
-  align-items: center
-=======
     position: relative;
     left: 0;
     bottom: 0;
@@ -19,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center
->>>>>>> 81be0ea0a6c17a2b21f5c5d04b059a0ba6a8d897
 }
 
 .icon-size {

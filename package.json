@@ -21,13 +21,8 @@
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/router": "~9.0.3",
-<<<<<<< HEAD
     "angular-in-memory-web-api": "^0.11.0",
     "bootstrap": "^4.5.0",
-=======
-    "@popperjs/core": "^2.4.4",
-    "bootstrap": "^4.3.1",
->>>>>>> 81be0ea0a6c17a2b21f5c5d04b059a0ba6a8d897
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
