@@ -21,14 +21,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AppComponent,
     RosterPageComponent,
     HomeComponent,
-<<<<<<< HEAD
-    AboutPageComponent
-=======
     AboutPageComponent,
     FooterComponent,
     RosterListComponent,
     BackgroundCometsComponent,
->>>>>>> 20a2c25299928c6a04246f47eac5d712d3c61be7
   ],
   imports: [
     BrowserModule,
