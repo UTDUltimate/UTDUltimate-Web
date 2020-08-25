@@ -15,6 +15,7 @@ import {NavbarComponent} from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     NavbarComponent,
     RosterListComponent,
     BackgroundCometsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
