@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { RosterPageComponent } from "./roster-page/roster-page.component";
@@ -12,9 +11,12 @@ import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./services/in-memory-data.service";
 import { RosterListComponent } from "./roster-page/roster-list/roster-list.component";
 import { BackgroundCometsComponent } from './background-comets/background-comets.component';
-
+import {NavbarComponent} from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 @NgModule({
   declarations: [
@@ -23,21 +25,23 @@ import {MatExpansionModule} from '@angular/material/expansion';
     HomeComponent,
     AboutPageComponent,
     FooterComponent,
+    NavbarComponent,
     RosterListComponent,
     BackgroundCometsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      dataEncapsulation: false,
+      dataEncapsulation: false
     }),
     BrowserAnimationsModule,
     MatExpansionModule
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}
