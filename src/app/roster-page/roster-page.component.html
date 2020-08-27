@@ -1,5 +1,8 @@
 <div id="main-container" class="container-fluid">
-  <app-team-header-nav></app-team-header-nav>
-  <!-- <app-roster-list></app-roster-list> -->
+  <app-team-header-nav
+    [teams]="teams"
+    [rosterList]="rosterList"
+  ></app-team-header-nav>
+  <app-roster-list [teams]="teams" #rosterList></app-roster-list>
   <app-background-comets></app-background-comets>
 </div>

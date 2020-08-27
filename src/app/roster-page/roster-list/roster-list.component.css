@@ -3,31 +3,93 @@ h3 {
   color: #fffffc;
 }
 
-.roster,
+.players,
 p {
   font: 14px 'Roboto', sans-serif;
   color: #fffffc;
 }
 
-#roster-list-container {
-  width: 100%;
-  animation: slide-from-right 2s 0s forwards;
+.selected-container {
+  width: 960px;
+  margin: 0 auto 0;
+  overflow: hidden;
 }
 
-@keyframes slide-from-right {
-  from {
-    margin-left: 100%;
-  }
+.rosters-container {
+  width: 2880px;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.active {
+  left: 0;
+}
+
+.team-roster-container {
+  width: 960px;
+}
+
+.selected-inc {
+  position: relative;
+  left: 0px;
+  animation: slide-in-right 2s 0s forwards;
+}
+
+.selected-dec {
+  position: relative;
+  left: -960px;
+  animation: slide-in-left 2s 0s forwards;
+}
+
+.deselected-inc {
+  position: relative;
+  left: 0px;
+  animation: slide-out-left 2s 0s forwards;
+}
+
+.deselected-dec {
+  position: relative;
+  left: -960px;
+  animation: slide-out-right 2s 0s forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes slide-in-right {
 
   to {
-    margin-left: 0%;
+    transform: translate(-960px);
+  }
+}
+
+@keyframes slide-in-left {
+  to {
+    transform: translate(960px);
+  }
+}
+
+@keyframes slide-out-left {
+  to {
+    transform: translate(-960px);
+  }
+}
+
+@keyframes slide-out-right {
+  to {
+    transform: translate(960px);
+  }
+}
+
+@keyframes slide-out-left-hide {
+  99% {
+    transform: translate(-960px);
   }
 
-  /* 100% {
-
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  } */
+  100% {
+    display: none;
+  }
 }
