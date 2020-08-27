@@ -2,3 +2,7 @@
   background-color: #F28F3B;
 
 }
+
+.active-link {
+    font-weight: bold;
+}
