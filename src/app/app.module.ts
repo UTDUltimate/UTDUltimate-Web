@@ -15,6 +15,7 @@ import {NavbarComponent} from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
       dataEncapsulation: false
     }),
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgbModule
   ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [],
