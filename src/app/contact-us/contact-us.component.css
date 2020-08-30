@@ -1,3 +1,7 @@
-.heading {
+.modal {
     color: black;
+}
+
+.modal-title {
+    margin: 0px;
 }
