@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
+import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,8 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
     }),
     BrowserAnimationsModule,
     MatExpansionModule,
+    AmplifyAngularModule,
+    AmplifyService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

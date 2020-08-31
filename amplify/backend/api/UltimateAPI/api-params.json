@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "UltimateLambdas",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "UltimateAPI",
+    "apiName": "UltimateAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "UltimateLambdas"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-ultimatewebsite-dev-124403-authRole",
+        "unAuthRoleName": "amplify-ultimatewebsite-dev-124403-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "UltimateLambdas",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
