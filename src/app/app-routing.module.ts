@@ -8,8 +8,12 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "roster", component: RosterPageComponent },
+<<<<<<< HEAD
   { path: "about", component: AboutPageComponent },
   { path: "contact", component: ContactUsComponent },
+=======
+  { path: "about" , component: AboutPageComponent}
+>>>>>>> 6583d1c709e5404364bbe6c120ef1d4bf4fb358e
 ];
 
 @NgModule({
