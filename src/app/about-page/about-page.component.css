@@ -12,3 +12,8 @@ ul {
 hr {
     background-color: white;
 }
+
+img {
+    width: 80%;
+    border-radius: 10%;
+}
