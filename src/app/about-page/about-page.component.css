@@ -1,15 +1,19 @@
-.text {
-    color: red;
+.center {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
 }
 
-.text2 {
-    font-size: 40px;
+ul {
+  text-align: center;
+  list-style: inside;
 }
 
-#id {
-    color: rgb(140, 40, 40);
+hr {
+    background-color: white;
 }
 
-p{
-    margin-right: 50px;
+img {
+    width: 80%;
+    border-radius: 10%;
 }
