@@ -1,0 +1,19 @@
+.center {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+hr {
+    background-color: white;
+}
+
+img {
+    width: 80%;
+    border-radius: 10%;
+}
