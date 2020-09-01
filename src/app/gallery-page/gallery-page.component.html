@@ -1,53 +1,63 @@
 <div class="container-fluid">
-    <div class="center">
-            <p>UTD Ultimate is a community of diverse individuals who share the common interest of ultimate frisbee. We strive for team and individual development through the medium of ultimate frisbee.</p>
-            <h4>Annual Events:</h4>
-            <ul>
-                <li>Summer Sand Mini</li>
-                <li>Summer Orientation Fairs</li>
-                <li>Welcome Week Mixed Mini Tournament</li>
-                <li>Diversity and Inclusion Meeting</li>
-                <li>Viva Volunteer</li>
-                <li>Homecoming Tailgate</li>
-                <li>Winter and Spring Banquets</li>
-                <li>Spring Club Sports Banquet</li>
-            </ul><hr />
-
+    <div class="container" style="margin-top: 10px;">
         <div class="row">
-            <div class="col-4">
-                <h3>Whiplash</h3>
-                <p>Established in ?, initally named Monstars, the team re-branded in 2019 to Whiplash.</p>
-                <h4>Practice Information:</h4>
-                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+            <div class="col-sm" style="margin-bottom: 10px;">
+                <mat-card class="example-card" style="border-radius: 0px;">
+                    <mat-card-header>
+                    <div mat-card-avatar class="header-image-1"></div>
+                    <mat-card-title>Whiplash</mat-card-title>
+                    <mat-card-subtitle>Womxns Team</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../assets/gallery-photos/utd_womxns.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
             </div>
-            
-            <div class="col-4">
-                <h3>Woof A</h3>
-                <p>Established in 2008, initally named D-TEX, the team re-branded in 2016 to Woof. Since then, the team has been focused on becoming a nationally competitive team. Over the past four years, Woof has been consistently achieving better and better seasonal results. In the most recent year, 2020, Woof beat two top 10 national teams - Carleton and Ohio State.</p>
-                <h4>Practice Information:</h4>
-                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+            <div class="col-sm" style="margin-bottom: 10px;">
+                <mat-card class="example-card" style="border-radius: 0px;">
+                    <mat-card-header>
+                    <div mat-card-avatar class="header-image-2"></div>
+                    <mat-card-title>Woof</mat-card-title>
+                    <mat-card-subtitle>Mens Team A</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../assets/gallery-photos/utd_mens.jpeg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
             </div>
-            
-            <div class="col-4">
-                <h3>Woof B</h3>
-                <p>Established in 2017, Woof B has been a competitive development team, one of the best in the DFW area.</p>
-                <h4>Practice Information:</h4>
-                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+            <div class="col-sm" style="margin-bottom: 10px;">
+                <mat-card class="example-card" style="border-radius: 0px;">
+                    <mat-card-header>
+                    <div mat-card-avatar class="header-image-3"></div>
+                    <mat-card-title>Woof</mat-card-title>
+                    <mat-card-subtitle>Mens Team B</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../assets/gallery-photos/utd_mens.jpeg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                    <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
             </div>
-        </div><hr />
-
-        <div style="margin-bottom: 20px">
-            <h1>FAQ's</h1>
-            <mat-accordion *ngFor="let faq of faqs">
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    {{ faq.question }}
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <p>{{ faq.answer }}</p>
-              </mat-expansion-panel>
-            </mat-accordion>
         </div>
-
+    </div>
 </div>
