@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent{
   title='ultimatewebsite';''
-  public createForm: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor() { }
 
   async ngOnInit() {
-    
   } 
-
-  public onCreate() {
-  }
-    
 }

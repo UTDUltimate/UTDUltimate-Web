@@ -42,10 +42,9 @@ import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
     BrowserAnimationsModule,
     MatExpansionModule,
     AmplifyAngularModule,
-    AmplifyService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [AmplifyService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
