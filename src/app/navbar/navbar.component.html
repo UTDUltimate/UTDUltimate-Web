@@ -1,8 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top md-1">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-    </button>
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"><a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation" aria-hidden="true">
+    </a></span>
 
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
       <div class="mr-lg-4">
@@ -28,24 +27,27 @@
         </svg>
 
       </div>
-      <ul class="navbar-nav font-weight-bold">
-        <li class="nav-item h6 ml-4 active">
-          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      <ul class="navbar-nav">
+        <li class="nav-item ml-2 mr-2">
+          <a class="nav-link" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link ml-4" routerLink="/about">About</a>
+        <li class="nav-item ml-2 mr-2">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active-link">About</a>
         </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link " routerLink="/">Gallery</a>
+        <li class="nav-item ml-2 mr-2">
+          <a class="nav-link " routerLink="/gallery" routerLinkActive="active-link">Gallery</a>
         </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link " routerLink="/roster">Roster</a>
+        <li class="nav-item ml-2 mr-2">
+          <a class="nav-link " routerLink="/roster" routerLinkActive="active-link">Roster</a>
         </li>
-        <li class="nav-item ml-4">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+        <li class="nav-item ml-2 mr-2">
+          <a class="nav-link" data-toggle="modal" data-target="#contact-us">Contact Us</a>
         </li>
       </ul>
 
     </div>
   </nav>
 </header>
+
+<app-contact-us></app-contact-us>

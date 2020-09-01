@@ -1,0 +1,16 @@
+#team-nav-custom {
+  font: 18px 'Oswald', sans-serif;
+  color: #fffffc;
+  opacity: 0.7;
+}
+
+#team-nav-custom:not(.active):hover {
+  color: #fffffc;
+  opacity: 1;
+}
+
+.active {
+  color: #fffffc !important;
+  opacity: 1 !important;
+  text-decoration: underline !important;
+}

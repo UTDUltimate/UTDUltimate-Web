@@ -1,0 +1,5 @@
+{
+    "tableName": "UltimateDynamo",
+    "partitionKeyName": "UTDID",
+    "partitionKeyType": "S"
+}

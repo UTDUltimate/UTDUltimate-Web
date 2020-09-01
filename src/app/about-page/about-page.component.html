@@ -1,14 +1,6 @@
 <div class="container-fluid">
     <div class="center">
-        <h1>About Page</h1><hr />
-        
-        <div>
-            <h3>COVID-19 UPDATE</h3>
-            <p>UTD Ultimate club teams will be following and taking advice from the CDC, the state of Texas, and the UTD Club Sports organization on when it will be safe to resume activities.</p>
-        </div><hr />
-
-        <div>
-            <h3>UT-Dallas Ultimate</h3>
+            <img src="../../assets/team-photos/mixed-mini-fall-2019.jpg" class="mb-3 mt-3"/>
             <p>UTD Ultimate is a community of diverse individuals who share the common interest of ultimate frisbee. We strive for team and individual development through the medium of ultimate frisbee.</p>
             <h4>Annual Events:</h4>
             <ul>
@@ -20,8 +12,7 @@
                 <li>Homecoming Tailgate</li>
                 <li>Winter and Spring Banquets</li>
                 <li>Spring Club Sports Banquet</li>
-            </ul>
-        </div><hr />
+            </ul><hr />
 
         <div class="row">
             <div class="col-4">
@@ -47,9 +38,9 @@
         </div><hr />
 
         <div style="margin-bottom: 20px">
-            <h3>FAQ's - ADD MORE INFO TO ANSWERS</h3>
+            <h1>FAQ's</h1>
             <mat-accordion *ngFor="let faq of faqs">
-              <mat-expansion-panel hideToggle>
+              <mat-expansion-panel>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
                     {{ faq.question }}
@@ -59,6 +50,5 @@
               </mat-expansion-panel>
             </mat-accordion>
         </div>
-        
-        </div>  
+
 </div>
