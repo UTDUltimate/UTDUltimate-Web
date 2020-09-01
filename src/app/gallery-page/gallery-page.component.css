@@ -15,7 +15,8 @@ hr {
 
 .example-card {
     max-width: 400px;
-    height: 820px;
+    min-height: 540px;
+    border-radius: 14px;
   }
 
 .header-image-1 {
@@ -33,7 +34,7 @@ hr {
     background-size: cover;
 }
 
-/* .mat-card-image:not([class*=mat-elevation-z]) {
+.mat-card-image:not([class*=mat-elevation-z]) {
     box-shadow: 0 0px 0px 0px rgba(0,0,0,1), 
                 0 2px 0px 0 rgba(0,0,0,1), 
                 0 8px 12px 0 rgba(0,0,0,1);
@@ -41,4 +42,5 @@ hr {
     margin-right: -30px;
     position: relative;
     width: 360px;
-} */
+    border-radius: 14px;
+}
