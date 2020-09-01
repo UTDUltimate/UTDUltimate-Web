@@ -1,0 +1,15 @@
+.text {
+    color: red;
+}
+
+.text2 {
+    font-size: 40px;
+}
+
+#id {
+    color: rgb(140, 40, 40);
+}
+
+p{
+    margin-right: 50px;
+}

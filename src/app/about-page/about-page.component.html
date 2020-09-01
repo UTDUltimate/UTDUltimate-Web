@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="center">
+        <h1>About Page</h1><hr />
+        
+        <div>
+            <h3>COVID-19 UPDATE</h3>
+            <p>UTD Ultimate club teams will be following and taking advice from the CDC, the state of Texas, and the UTD Club Sports organization on when it will be safe to resume activities.</p>
+        </div><hr />
+
+        <div>
+            <h3>UT-Dallas Ultimate</h3>
+            <p>UTD Ultimate is a community of diverse individuals who share the common interest of ultimate frisbee. We strive for team and individual development through the medium of ultimate frisbee.</p>
+            <h4>Annual Events:</h4>
+            <ul>
+                <li>Summer Sand Mini</li>
+                <li>Summer Orientation Fairs</li>
+                <li>Welcome Week Mixed Mini Tournament</li>
+                <li>Diversity and Inclusion Meeting</li>
+                <li>Viva Volunteer</li>
+                <li>Homecoming Tailgate</li>
+                <li>Winter and Spring Banquets</li>
+                <li>Spring Club Sports Banquet</li>
+            </ul>
+        </div><hr />
+
+        <div class="row">
+            <div class="col-4">
+                <h3>Whiplash</h3>
+                <p>Established in ?, initally named Monstars, the team re-branded in 2019 to Whiplash.</p>
+                <h4>Practice Information:</h4>
+                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+            </div>
+            
+            <div class="col-4">
+                <h3>Woof A</h3>
+                <p>Established in 2008, initally named D-TEX, the team re-branded in 2016 to Woof. Since then, the team has been focused on becoming a nationally competitive team. Over the past four years, Woof has been consistently achieving better and better seasonal results. In the most recent year, 2020, Woof beat two top 10 national teams - Carleton and Ohio State.</p>
+                <h4>Practice Information:</h4>
+                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+            </div>
+            
+            <div class="col-4">
+                <h3>Woof B</h3>
+                <p>Established in 2017, Woof B has been a competitive development team, one of the best in the DFW area.</p>
+                <h4>Practice Information:</h4>
+                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+            </div>
+        </div><hr />
+
+        <div style="margin-bottom: 20px">
+            <h3>FAQ's - ADD MORE INFO TO ANSWERS</h3>
+            <mat-accordion *ngFor="let faq of faqs">
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    {{ faq.question }}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>{{ faq.answer }}</p>
+              </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        
+        </div>  
+</div>
