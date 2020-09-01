@@ -24,6 +24,7 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,7 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
     BackgroundCometsComponent,
     TeamHeaderNavComponent,
     ContactUsComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +52,7 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
     MatCardModule,
     MatButtonModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
