@@ -16,6 +16,9 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatChipsModule } from '@angular/material/chips';
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
@@ -46,6 +49,9 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
     MatExpansionModule,
     AmplifyAngularModule,
     MatCardModule,
+    MatButtonModule,
+    MatTabsModule,
+    MatChipsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],

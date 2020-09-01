@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryPageComponent implements OnInit {
   constructor() { }
 
-  isActive = true;
+    isActive = true;
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { }
 
 }
