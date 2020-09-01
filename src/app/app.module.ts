@@ -24,7 +24,6 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
