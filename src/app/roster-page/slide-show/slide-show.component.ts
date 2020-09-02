@@ -20,9 +20,7 @@ export class SlideShowComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleActive(previouslyActive: number, currentlyActive: number) {
-    console.log(currentlyActive, previouslyActive);
     this.selectedContent = currentlyActive;
     this.deselectedContent = previouslyActive;
-    console.log(this.selectedContent, this.deselectedContent);
   }
 }

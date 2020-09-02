@@ -15,15 +15,11 @@ export class TeamHeaderNavComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.currentlyActive, this.previouslyActive);
-  }
+  ngOnInit(): void {}
 
   setActive(key: number): void {
-    console.log(key);
     this.previouslyActive = this.currentlyActive;
     this.currentlyActive = key;
-    console.log(this.currentlyActive, this.previouslyActive);
     this.slideShow.toggleActive(this.previouslyActive, this.currentlyActive);
   }
 }

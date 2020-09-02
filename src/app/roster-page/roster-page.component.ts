@@ -31,14 +31,6 @@ export class RosterPageComponent implements OnInit {
   }
 
   setNav(): void {
-    // let navHeaders = [];
-    // for (var team of this.teams) {
-    //   let navInfo = {
-    //     key: team.id,
-    //     name: team.name + " Roster",
-    //   };
-    //   this.navHeaders.push(navInfo);
-    // }
     this.navHeaders = this.teams.map((team) => ({
       key: team.id,
       name: team.name + " Roster",
@@ -46,15 +38,6 @@ export class RosterPageComponent implements OnInit {
   }
 
   getRosters(): void {
-    // let rosterSections = [];
-    // for (var team of this.teams) {
-    //   let rosterInfo = {
-    //     key: team.id,
-    //     title: team.name + " Roster",
-    //     roster: team.roster,
-    //   };
-    //   this.rosterSections.push(rosterInfo);
-    // }
     this.rosterSections = this.teams.map((team) => ({
       key: team.id,
       title: team.name + " Roster",
