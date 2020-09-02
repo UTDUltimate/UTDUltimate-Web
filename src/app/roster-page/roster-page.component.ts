@@ -23,10 +23,22 @@ export class RosterPageComponent implements OnInit {
   }
 
   getTeams(): void {
-    this.teamService.getTeams().subscribe((teams) => (this.teams = teams));
+    this.teamService.getTeams().subscribe((teams) => {
+      this.teams = teams;
+      this.setNav();
+      this.getRosters();
+    });
   }
 
   setNav(): void {
+    // let navHeaders = [];
+    // for (var team of this.teams) {
+    //   let navInfo = {
+    //     key: team.id,
+    //     name: team.name + " Roster",
+    //   };
+    //   this.navHeaders.push(navInfo);
+    // }
     this.navHeaders = this.teams.map((team) => ({
       key: team.id,
       name: team.name + " Roster",
@@ -34,11 +46,12 @@ export class RosterPageComponent implements OnInit {
   }
 
   getRosters(): void {
+    // let rosterSections = [];
     // for (var team of this.teams) {
     //   let rosterInfo = {
-    //     key: team.id.toString(),
+    //     key: team.id,
     //     title: team.name + " Roster",
-    //     content: team.roster,
+    //     roster: team.roster,
     //   };
     //   this.rosterSections.push(rosterInfo);
     // }

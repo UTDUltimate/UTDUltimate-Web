@@ -7,19 +7,23 @@ import { SlideShowComponent } from "../slide-show/slide-show.component";
   styleUrls: ["./team-header-nav.component.css"],
 })
 export class TeamHeaderNavComponent implements OnInit {
-  currentlyActive: number = 0;
-  previouslyActive: number = 0;
+  currentlyActive: number = 1;
+  previouslyActive: number = 1;
 
   @Input() headerItems: Array<{ key: number; name: string }>;
   @Input() slideShow: SlideShowComponent;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.currentlyActive, this.previouslyActive);
+  }
 
   setActive(key: number): void {
+    console.log(key);
     this.previouslyActive = this.currentlyActive;
     this.currentlyActive = key;
+    console.log(this.currentlyActive, this.previouslyActive);
     this.slideShow.toggleActive(this.previouslyActive, this.currentlyActive);
   }
 }

@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./slide-show.component.css"],
 })
 export class SlideShowComponent implements OnInit {
-  selectedContent: number = 0;
-  deselectedContent: number = 0;
+  selectedContent: number = 1;
+  deselectedContent: number = 1;
 
   @Input() contentSections: Array<{
     key: number;
