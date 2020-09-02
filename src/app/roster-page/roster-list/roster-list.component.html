@@ -2,8 +2,8 @@
   <div class="rosters-container">
     <div
       [ngClass]="{
-        'team-roster-container': true,
-        active: selectedRoster === 0,
+        'content-container': true,
+        'initial-content': selectedRoster === 0,
         hidden: selectedRoster !== 0 && deselectedRoster !== 0,
         'deselected-inc': selectedRoster !== 0 && deselectedRoster === 0
       }"
@@ -82,7 +82,7 @@
     <div
       *ngFor="let team of teams"
       [ngClass]="{
-        'team-roster-container': true,
+        'content-container': true,
         hidden: selectedRoster != team.id && deselectedRoster != team.id,
         'selected-inc':
           selectedRoster === team.id && selectedRoster > deselectedRoster,
@@ -100,7 +100,7 @@
           <li
             *ngFor="let player of team.roster"
             class="list-group-item"
-            style="background-color: #c8553d;"
+            style="background-color: #c8553d"
           >
             <a class="players" routerLink="/players/{{ player.id }}">
               <span>{{ player.name }}</span>
