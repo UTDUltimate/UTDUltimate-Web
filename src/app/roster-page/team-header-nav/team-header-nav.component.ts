@@ -1,7 +1,5 @@
 import { Component, OnInit, Input, HostListener } from "@angular/core";
-import { Team } from "../../models/team";
-import { TeamService } from "../../services/team.service";
-import { RosterListComponent } from "../roster-list/roster-list.component";
+// import { SlideShowComponent } from "../slide-show/slide-show.component";
 
 @Component({
   selector: "app-team-header-nav",
@@ -13,7 +11,7 @@ export class TeamHeaderNavComponent implements OnInit {
   previouslyActive: number = 0;
 
   @Input() headerItems: Array<{ key: number; name: string }>;
-  @Input() slideshowComponent: Component;
+  @Input() SlideShowComponent: Component;
 
   constructor() {}
 
@@ -22,7 +20,7 @@ export class TeamHeaderNavComponent implements OnInit {
   setActive(key: number): void {
     this.previouslyActive = this.currentlyActive;
     this.currentlyActive = key;
-    this.slideshowComponent.toggleActive(
+    this.SlideShowComponent.toggleActive(
       this.previouslyActive,
       this.currentlyActive
     );
