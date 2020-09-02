@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
+import { SlideShowComponent } from './roster-page/slide-show/slide-show.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
     BackgroundCometsComponent,
     TeamHeaderNavComponent,
     ContactUsComponent,
+    SlideShowComponent,
   ],
   imports: [
     BrowserModule,
