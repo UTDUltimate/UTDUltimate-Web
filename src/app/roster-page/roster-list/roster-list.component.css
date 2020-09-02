@@ -1,86 +1,66 @@
-h3 {
-  font: 24px 'Roboto', sans-serif;
-  color: #fffffc;
-  margin-left: 1.5rem;
-}
-
-.players,
-p {
-  font: 14px 'Roboto', sans-serif;
-  color: #fffffc;
-}
-
-.selected-container {
-  width: 960px;
-  margin: 0 auto 0;
-  overflow: hidden;
-}
-
-.rosters-container {
-  width: 1920px;
-  margin: 0 auto 0;
+.cards-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
-.initial-content {
-  left: 0;
+.player-card {
+  width: 300px;
+  height: 350px;
+  margin: 0;
+  padding: 15px;
 }
 
-.content-container {
-  width: 960px;
-}
-
-.selected-inc {
+.card-photo-container {
   position: relative;
+  width: 270px;
+  height: 300px;
+}
+
+.player-info {
+  font: 16px 'Oxygen Mono', sans-serif;
+}
+
+.team-logo {
+  width: 100%;
+  max-height: 300px;
+  position: absolute;
+  top: 0px;
   left: 0px;
-  animation: slide-in-right 2s 0s forwards;
 }
 
-.selected-dec {
-  position: relative;
-  left: -960px;
-  animation: slide-in-left 2s 0s forwards;
+.card-photo-container:hover>.team-logo {
+  filter: blur(11px);
+  -webkit-filter: blur(11px);
 }
 
-.deselected-inc {
-  position: relative;
+.player-info-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
   left: 0px;
-  animation: slide-out-left 2s 0s forwards;
+  z-index: 2;
+
+  background-color: rgba(200, 85, 61, 0.7);
 }
 
-.deselected-dec {
-  position: relative;
-  left: -960px;
-  animation: slide-out-right 2s 0s forwards;
+.card-photo-container:hover>.player-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hidden {
+h4 {
+  font: 20px 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.145em;
+  text-align: center;
+  color: #fffffc;
+  padding: 0.3rem;
+  margin: 0;
+}
+
+.hide {
   display: none;
-}
-
-@keyframes slide-in-right {
-
-  to {
-    transform: translate(-960px);
-  }
-}
-
-@keyframes slide-in-left {
-  to {
-    transform: translate(960px);
-  }
-}
-
-@keyframes slide-out-left {
-  to {
-    transform: translate(-960px);
-  }
-}
-
-@keyframes slide-out-right {
-  to {
-    transform: translate(960px);
-  }
 }

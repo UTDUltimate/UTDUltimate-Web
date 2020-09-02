@@ -1,11 +1,16 @@
-<ul class="list-group list-group-flush">
-  <li
-    *ngFor="let player of roster"
-    class="list-group-item"
-    style="background-color: #c8553d"
-  >
-    <a class="players" routerLink="/players/{{ player.id }}">
-      <span>{{ player.name }}</span>
-    </a>
-  </li>
-</ul>
+<div class="cards-container">
+  <div *ngFor="let player of roster" class="player-card">
+    <div class="card-photo-container">
+      <img src="../../assets/whiplash-logo-simple-dark.svg" class="team-logo" />
+      <div class="player-info-container hide">
+        <p class="player-info">
+          No. 18<br />
+          Year: Super Senior<br />
+          Position: Hybrid<br />
+          Favorite Food: Sushi
+        </p>
+      </div>
+    </div>
+    <h4>{{ player.name }}</h4>
+  </div>
+</div>
