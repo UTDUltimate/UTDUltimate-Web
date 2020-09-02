@@ -9,25 +9,22 @@ import { RosterListComponent } from "../roster-list/roster-list.component";
   styleUrls: ["./team-header-nav.component.css"],
 })
 export class TeamHeaderNavComponent implements OnInit {
-  activeTeam: number = 0;
+  currentlyActive: number = 0;
   previouslyActive: number = 0;
 
-  @Input() teams: Team[];
-  @Input() rosterList: RosterListComponent;
+  @Input() headerItems: Array<{ key: number; name: string }>;
+  @Input() slideshowComponent: Component;
 
-  constructor(private teamService: TeamService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.getTeams();
-  }
+  ngOnInit(): void {}
 
-  getTeams(): void {
-    this.teamService.getTeams().subscribe((teams) => (this.teams = teams));
-  }
-
-  setActive(teamId: number): void {
-    this.previouslyActive = this.activeTeam;
-    this.activeTeam = teamId;
-    this.rosterList.toggleTeam(this.previouslyActive, this.activeTeam);
+  setActive(key: number): void {
+    this.previouslyActive = this.currentlyActive;
+    this.currentlyActive = key;
+    this.slideshowComponent.toggleActive(
+      this.previouslyActive,
+      this.currentlyActive
+    );
   }
 }

@@ -1,1 +1,29 @@
-<p>slide-show works!</p>
+<div class="selected-container">
+  <div class="full-content-container">
+    <div
+      *ngFor="let section of contentSections"
+      [ngClass]="{
+        'single-content-container': true,
+        hidden:
+          selectedContent != section.key && deselectedContent != section.key,
+        'selected-inc':
+          selectedContent === section.key &&
+          selectedContent > deselectedContent,
+        'deselected-inc':
+          deselectedContent === section.key &&
+          selectedContent > deselectedContent,
+        'selected-dec':
+          selectedContent === section.key &&
+          selectedContent < deselectedContent,
+        'deselected-dec':
+          deselectedContent === section.key &&
+          selectedContent < deselectedContent
+      }"
+    >
+      <h3>{{ section.title | uppercase }}</h3>
+      <p>
+        <app-roster-list [roster]="section.roster"></app-roster-list>
+      </p>
+    </div>
+  </div>
+</div>

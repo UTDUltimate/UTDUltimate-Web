@@ -1,7 +1,11 @@
 <div id="main-container" class="container-fluid">
   <app-team-header-nav
-    [teams]="teams"
-    [rosterList]="rosterList"
+    [headerItems]="teams"
+    [slideshowComponent]="rosterSlideShow"
   ></app-team-header-nav>
-  <app-roster-list [teams]="teams" #rosterList></app-roster-list>
+  <app-slide-show
+    [contentSections]="rosterSections"
+    #rosterSlideShow
+  ></app-slide-show>
+  <!-- <app-roster-list [teams]="teams" #rosterList></app-roster-list> -->
 </div>
