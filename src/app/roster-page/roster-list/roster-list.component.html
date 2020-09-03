@@ -1,13 +1,32 @@
 <div class="cards-container">
   <div *ngFor="let player of roster" class="player-card">
     <div class="card-photo-container">
-      <img src="../../assets/whiplash-logo-simple-dark.svg" class="team-logo" />
-      <div class="player-info-container hide">
+      <img
+        *ngIf="player.team_id === 1 && !player.player_photo"
+        src="../../assets/woof-logo.svg"
+        class="team-logo"
+      />
+      <img
+        *ngIf="player.team_id === 2 && !player.player_photo"
+        src="../../assets/woof-logo.svg"
+        class="team-logo"
+      />
+      <img
+        *ngIf="player.team_id === 3 && !player.player_photo"
+        src="../../assets/whiplash-logo-simple-dark.svg"
+        class="team-logo"
+      />
+      <img
+        *ngIf="player.player_photo"
+        src="{{ player.player_photo }}"
+        class="team-logo"
+      />
+      <div class="player-info-container">
         <p class="player-info">
-          No. 18<br />
-          Year: Super Senior<br />
-          Position: Hybrid<br />
-          Favorite Food: Sushi
+          No. {{ player.jersey_number }}<br />
+          Year: {{ player.year }}<br />
+          Position: {{ player.position }}<br />
+          Favorite Food: {{ player.fav_food }}
         </p>
       </div>
     </div>

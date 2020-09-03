@@ -16,10 +16,7 @@
   position: relative;
   width: 250px;
   height: 250px;
-}
-
-.player-info {
-  font: 16px "Oxygen Mono", sans-serif;
+  overflow: hidden;
 }
 
 .team-logo {
@@ -28,9 +25,13 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.card-photo-container:hover > .team-logo {
+.card-photo-container:hover>.team-logo {
   filter: blur(11px);
   -webkit-filter: blur(11px);
 }
@@ -42,14 +43,24 @@
   top: 0px;
   left: 0px;
   z-index: 2;
-
   background-color: rgba(200, 85, 61, 0.7);
-}
-
-.card-photo-container:hover > .player-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.player-info {
+  font: 16px "Oxygen Mono", sans-serif;
+}
+
+.card-photo-container:hover>.player-info-container {
+  opacity: 1;
 }
 
 .player-name {
@@ -65,8 +76,4 @@ h4 {
   letter-spacing: 0.145em;
   color: #fffffc;
   margin: auto;
-}
-
-.hide {
-  display: none;
 }
