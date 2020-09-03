@@ -24,6 +24,7 @@ import { BackgroundCometsComponent } from './background-comets/background-comets
 import {NavbarComponent} from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs'
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -59,10 +60,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatExpansionModule,
 <<<<<<< HEAD
+<<<<<<< HEAD
     AmplifyAngularModule,
 =======
     NgbModule
 >>>>>>> 7b84c4725b86970e90587792f8d49e58eb497196
+=======
+    MatTabsModule
+>>>>>>> 56088f043a069d9a1e71e6eda5aef7a5ec2deb0a
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
