@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NavbarComponent,
     RosterListComponent,
     BackgroundCometsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       dataEncapsulation: false
     }),
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgbModule
   ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [],
