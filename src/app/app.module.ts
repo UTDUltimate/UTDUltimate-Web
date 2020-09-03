@@ -17,7 +17,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
-import { SlideShowComponent } from './roster-page/slide-show/slide-show.component';
+import { SlideShowComponent } from "./roster-page/slide-show/slide-show.component";
+import { AmplifyAngularModule, AmplifyService } from "aws-amplify-angular";
 
 @NgModule({
   declarations: [
@@ -42,9 +43,10 @@ import { SlideShowComponent } from './roster-page/slide-show/slide-show.componen
     }),
     BrowserAnimationsModule,
     MatExpansionModule,
+    AmplifyAngularModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [AmplifyService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,4 +1,12 @@
 .navbar {
   background-color: #F28F3B;
+  text-align: center;
+}
 
+.navbar-toggler {
+    border-color: #F28F3B;
+}
+
+.active-link {
+    font-weight: bold;
 }
