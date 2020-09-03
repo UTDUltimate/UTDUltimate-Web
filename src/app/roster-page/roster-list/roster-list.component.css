@@ -2,34 +2,35 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .player-card {
-  width: 300px;
-  height: 350px;
-  margin: 0;
-  padding: 15px;
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  background-color: #d86f59;
 }
 
 .card-photo-container {
   position: relative;
-  width: 270px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .player-info {
-  font: 16px 'Oxygen Mono', sans-serif;
+  font: 16px "Oxygen Mono", sans-serif;
 }
 
 .team-logo {
   width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   position: absolute;
   top: 0px;
   left: 0px;
 }
 
-.card-photo-container:hover>.team-logo {
+.card-photo-container:hover > .team-logo {
   filter: blur(11px);
   -webkit-filter: blur(11px);
 }
@@ -45,20 +46,25 @@
   background-color: rgba(200, 85, 61, 0.7);
 }
 
-.card-photo-container:hover>.player-info-container {
+.card-photo-container:hover > .player-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-name {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 h4 {
-  font: 20px 'Roboto', sans-serif;
+  font: 20px "Roboto", sans-serif;
   font-weight: 300;
   letter-spacing: 0.145em;
-  text-align: center;
   color: #fffffc;
-  padding: 0.3rem;
-  margin: 0;
+  margin: auto;
 }
 
 .hide {
