@@ -14,6 +14,7 @@ import { BackgroundCometsComponent } from './background-comets/background-comets
 import {NavbarComponent} from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs'
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
@@ -38,7 +39,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       dataEncapsulation: false
     }),
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTabsModule
   ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [],
