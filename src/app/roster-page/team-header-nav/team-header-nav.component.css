@@ -2,7 +2,8 @@
   font: 16px 'Oswald', sans-serif;
   color: #fffffc;
   opacity: 0.7;
-  margin: 0.75rem;
+  margin: 0.5rem 0.75rem;
+  padding: 0;
 }
 
 #nav-custom:not(.active):hover {
@@ -14,4 +15,16 @@
   color: #fffffc !important;
   opacity: 1 !important;
   text-decoration: underline !important;
+}
+
+@media only screen and (min-width : 768px) {
+  #nav-custom {
+    margin: 1.5rem;
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  #nav-custom {
+    margin: 1.5rem;
+  }
 }

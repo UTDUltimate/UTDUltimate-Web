@@ -537,6 +537,7 @@ export class InMemoryDataService implements InMemoryDbService {
         year: "Junior",
         position: "Cutter",
         fav_food: "Ice Cream",
+        player_photo: "../../assets/player-photos/Negin Khakpour.jpg",
         team_id: 3,
       },
       {
@@ -600,6 +601,7 @@ export class InMemoryDataService implements InMemoryDbService {
         year: "Junior",
         position: "Cutter",
         fav_food: "Ice Cream",
+        player_photo: "../../assets/player-photos/Brianne McLemore.jpg",
         team_id: 3,
       },
       {
@@ -636,6 +638,7 @@ export class InMemoryDataService implements InMemoryDbService {
         year: "Junior",
         position: "Cutter",
         fav_food: "Ice Cream",
+        player_photo: "../../assets/player-photos/Camille Gerstner.jpg",
         team_id: 3,
       },
       {
@@ -672,6 +675,7 @@ export class InMemoryDataService implements InMemoryDbService {
         year: "Junior",
         position: "Cutter",
         fav_food: "Ice Cream",
+        player_photo: "../../assets/player-photos/Emma Bronnenberg.jpg",
         team_id: 3,
       },
       {
@@ -681,6 +685,7 @@ export class InMemoryDataService implements InMemoryDbService {
         year: "Junior",
         position: "Cutter",
         fav_food: "Ice Cream",
+        player_photo: "../../assets/player-photos/Olivia Osborne.jpg",
         team_id: 3,
       },
       {
@@ -1281,6 +1286,7 @@ export class InMemoryDataService implements InMemoryDbService {
             year: "Junior",
             position: "Cutter",
             fav_food: "Ice Cream",
+            player_photo: "../../assets/player-photos/Negin Khakpour.jpg",
             team_id: 3,
           },
           {
@@ -1381,6 +1387,7 @@ export class InMemoryDataService implements InMemoryDbService {
             year: "Junior",
             position: "Cutter",
             fav_food: "Ice Cream",
+            player_photo: "../../assets/player-photos/Camille Gerstner.jpg",
             team_id: 3,
           },
           {
@@ -1417,6 +1424,7 @@ export class InMemoryDataService implements InMemoryDbService {
             year: "Junior",
             position: "Cutter",
             fav_food: "Ice Cream",
+            player_photo: "../../assets/player-photos/Emma Bronnenberg.jpg",
             team_id: 3,
           },
           {
@@ -1426,6 +1434,7 @@ export class InMemoryDataService implements InMemoryDbService {
             year: "Junior",
             position: "Cutter",
             fav_food: "Ice Cream",
+            player_photo: "../../assets/player-photos/Olivia Osborne.jpg",
             team_id: 3,
           },
           {
