@@ -9,7 +9,6 @@ import { TeamService } from "../services/team.service";
 })
 export class RosterPageComponent implements OnInit {
   teams: Team[];
-  selectedTeam: Team;
 
   constructor(private teamService: TeamService) {}
 
@@ -19,9 +18,5 @@ export class RosterPageComponent implements OnInit {
 
   getTeams(): void {
     this.teamService.getTeams().subscribe((teams) => (this.teams = teams));
-  }
-
-  onSelect(team: Team): void {
-    this.selectedTeam = team;
   }
 }

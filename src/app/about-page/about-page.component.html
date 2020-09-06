@@ -7,40 +7,22 @@
 
         <mat-tab-group mat-align-tabs="center" dynamicHeight>
             <mat-tab label="Annual Events">
-                <div class="row justify-content-md-center">
-                    <div class="col col-lg-2"></div>
-                    <div class="col-md-auto">
-                        <ul class="list">
-                            <li>Summer Sand Mini</li>
-                            <li>Summer Orientation Fairs</li>
-                            <li>Welcome Week Mixed Mini Tournament</li>
-                            <li>Diversity and Inclusion Meeting</li>
-                            <li>Viva Volunteer</li>
-                            <li>Homecoming Tailgate</li>
-                            <li>Winter and Spring Banquets</li>
-                            <li>Spring Club Sports Banquet</li>
-                        </ul>
-                    </div>
-                    <div class="col col-lg-2"></div>
-                  </div>
+                <p *ngFor="let event of events"> {{ event }}</p>
             </mat-tab>
             <mat-tab label="Whiplash">
-                <h3>Whiplash</h3>
                 <p>Established in ?, initally named Monstars, the team re-branded in 2019 to Whiplash.</p>
-                <h4>Practice Information:</h4>
-                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+                <br />
+                <p>Fall 2020 Practices are currently suspended till further notice. Email <u>utdwomensultimate13@gmail.com</u> for more information.</p>
             </mat-tab>
             <mat-tab label="Woof A">
-                <h3>Woof A</h3>
                 <p>Established in 2008, initally named D-TEX, the team re-branded in 2016 to Woof. Since then, the team has been focused on becoming a nationally competitive team. Over the past four years, Woof has been consistently achieving better and better seasonal results. In the most recent year, 2020, Woof beat two top 10 national teams - Carleton and Ohio State.</p>
-                <h4>Practice Information:</h4>
-                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+                <br />
+                <p>Fall 2020 Practices are currently suspended till further notice. Email <u>utdfrisbee@gmail.com</u> for more information.</p>
             </mat-tab>
             <mat-tab label="Woof B">
-                <h3>Woof B</h3>
-                <p>Established in 2017, Woof B has been a competitive development team, one of the best in the DFW area.</p>
-                <h4>Practice Information:</h4>
-                <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
+                <p>Established in 2017, Woof B is a competitive development team, one of the best in the DFW area.</p>
+                <br />
+                <p>Fall 2020 Practices are currently suspended till further notice. Email <u>utdfrisbee@gmail.com</u> for more information.</p>
             </mat-tab>
         </mat-tab-group>
 
