@@ -18,6 +18,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { MatTabsModule } from "@angular/material/tabs";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
     BrowserAnimationsModule,
     MatExpansionModule,
     MatTabsModule,
-    AmplifyAngularModule
+    AmplifyAngularModule,
+    MatTooltipModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
