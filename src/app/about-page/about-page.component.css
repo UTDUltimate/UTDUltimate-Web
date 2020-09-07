@@ -4,8 +4,11 @@
     text-align: center;
 }
 
-ul {
-  text-align: center;
+.center-list {
+    align-content: center;
+}
+.list {
+  text-align: left;
   list-style: inside;
 }
 
@@ -14,6 +17,23 @@ hr {
 }
 
 img {
-    width: 80%;
+    width: 100%;
     border-radius: 10%;
+}
+
+.mat-tab-header {
+    border-bottom: none;
+}
+.mat-tab-label {
+    color: white;
+    background-color: #3D7E7E;
+}
+.mat-tab-body {
+    padding: 16px
+}
+
+@media (max-width: 979px) {
+    .center {
+        width: 90%;
+    }
 }
