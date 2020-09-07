@@ -20,6 +20,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
+import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
     MatExpansionModule,
     MatTabsModule,
     AmplifyAngularModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FormsModule,
+    MatSnackBarModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
