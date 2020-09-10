@@ -25,6 +25,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  border-radius: 0px;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
