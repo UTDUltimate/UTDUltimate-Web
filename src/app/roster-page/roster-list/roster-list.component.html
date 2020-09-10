@@ -1,201 +1,37 @@
-<div class="selected-container">
-  <div class="rosters-container">
-    <div
-      [ngClass]="{
-        'team-roster-container': true,
-        active: selectedRoster === 0,
-        hidden: selectedRoster !== 0 && deselectedRoster !== 0,
-        'deselected-inc': selectedRoster !== 0 && deselectedRoster === 0
-      }"
-    >
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Sed arcu non odio
-        euismod lacinia at. Pharetra diam sit amet nisl. Egestas purus viverra
-        accumsan in nisl nisi scelerisque eu ultrices. Ut sem viverra aliquet
-        eget sit amet. Odio ut sem nulla pharetra diam sit. Quis commodo odio
-        aenean sed adipiscing diam donec adipiscing tristique. Ut consequat
-        semper viverra nam libero justo laoreet sit. Nunc id cursus metus
-        aliquam eleifend mi in nulla. Duis at tellus at urna. Varius vel
-        pharetra vel turpis nunc eget lorem dolor sed. Nisl purus in mollis nunc
-        sed id semper risus. Varius morbi enim nunc faucibus a pellentesque sit
-        amet. Gravida dictum fusce ut placerat orci nulla. Cras semper auctor
-        neque vitae tempus quam pellentesque. Ipsum suspendisse ultrices gravida
-        dictum fusce ut placerat orci. Consectetur a erat nam at lectus urna
-        duis convallis convallis. Odio pellentesque diam volutpat commodo sed
-        egestas egestas fringilla. Sodales neque sodales ut etiam sit. Quam
-        adipiscing vitae proin sagittis nisl. Adipiscing at in tellus integer
-        feugiat scelerisque varius morbi enim. Lectus proin nibh nisl
-        condimentum id venenatis a condimentum. Justo eget magna fermentum
-        iaculis eu. Sollicitudin ac orci phasellus egestas tellus rutrum tellus
-        pellentesque. Ut ornare lectus sit amet est placerat in egestas.
-        Volutpat odio facilisis mauris sit amet massa vitae tortor. Non tellus
-        orci ac auctor augue mauris augue neque gravida. Consectetur adipiscing
-        elit ut aliquam purus sit amet luctus. Sagittis vitae et leo duis ut
-        diam quam nulla porttitor. Duis ultricies lacus sed turpis tincidunt id
-        aliquet risus feugiat. Vel orci porta non pulvinar neque laoreet
-        suspendisse interdum consectetur. Iaculis at erat pellentesque
-        adipiscing commodo. Amet aliquam id diam maecenas ultricies mi. A lacus
-        vestibulum sed arcu non odio euismod lacinia. Ultricies integer quis
-        auctor elit sed vulputate mi sit. Et netus et malesuada fames ac turpis
-        egestas. Nibh nisl condimentum id venenatis a condimentum vitae. Metus
-        aliquam eleifend mi in. Pharetra pharetra massa massa ultricies mi quis.
-        Morbi tristique senectus et netus et malesuada fames ac. Elit
-        scelerisque mauris pellentesque pulvinar pellentesque habitant. Cras
-        pulvinar mattis nunc sed blandit libero. Diam phasellus vestibulum lorem
-        sed risus ultricies tristique. Risus pretium quam vulputate dignissim.
-        Consequat id porta nibh venenatis cras sed felis. Ultrices eros in
-        cursus turpis massa tincidunt dui. Nullam ac tortor vitae purus faucibus
-        ornare suspendisse sed. Ornare lectus sit amet est placerat in. Mattis
-        aliquam faucibus purus in massa tempor nec feugiat nisl. Dictum non
-        consectetur a erat nam at. Ornare arcu dui vivamus arcu felis. Sed
-        libero enim sed faucibus turpis in. Egestas sed tempus urna et pharetra
-        pharetra massa. Tristique nulla aliquet enim tortor. Lacus viverra vitae
-        congue eu consequat ac. Scelerisque eu ultrices vitae auctor eu augue.
-        Convallis a cras semper auctor neque. Magna fermentum iaculis eu non
-        diam phasellus. Egestas pretium aenean pharetra magna ac placerat. Morbi
-        tristique senectus et netus et malesuada. Eget nulla facilisi etiam
-        dignissim diam quis enim lobortis scelerisque. Ut tristique et egestas
-        quis ipsum suspendisse ultrices gravida. Libero enim sed faucibus turpis
-        in. Scelerisque fermentum dui faucibus in. Orci dapibus ultrices in
-        iaculis nunc sed augue. Consequat semper viverra nam libero justo
-        laoreet sit. Orci phasellus egestas tellus rutrum tellus pellentesque.
-        Purus sit amet volutpat consequat mauris nunc. Id consectetur purus ut
-        faucibus pulvinar elementum integer enim neque. Volutpat blandit aliquam
-        etiam erat velit scelerisque in. Vulputate ut pharetra sit amet aliquam.
-        Vitae nunc sed velit dignissim sodales ut eu sem integer. Risus at
-        ultrices mi tempus. Hac habitasse platea dictumst quisque. Tellus in
-        metus vulputate eu scelerisque felis imperdiet proin fermentum. Sit amet
-        facilisis magna etiam tempor orci eu lobortis elementum. Vivamus arcu
-        felis bibendum ut tristique et egestas. Diam quis enim lobortis
-        scelerisque. Sem integer vitae justo eget. Arcu vitae elementum
-        curabitur vitae nunc sed velit dignissim sodales. Consequat mauris nunc
-        congue nisi vitae suscipit tellus. Ullamcorper a lacus vestibulum sed.
-        Lacinia at quis risus sed vulputate odio ut enim. Arcu dui vivamus arcu
-        felis bibendum ut. Euismod in pellentesque massa placerat duis. Mauris
-        ultrices eros in cursus turpis massa tincidunt. Ac turpis egestas sed
-        tempus urna et pharetra. Nascetur ridiculus mus mauris vitae ultricies
-        leo integer malesuada.
-      </p>
-    </div>
-
-    <div
-      *ngFor="let team of teams"
-      [ngClass]="{
-        'team-roster-container': true,
-        hidden: selectedRoster != team.id && deselectedRoster != team.id,
-        'selected-inc':
-          selectedRoster === team.id && selectedRoster > deselectedRoster,
-        'deselected-inc':
-          deselectedRoster === team.id && selectedRoster > deselectedRoster,
-        'selected-dec':
-          selectedRoster === team.id && selectedRoster < deselectedRoster,
-        'deselected-dec':
-          deselectedRoster === team.id && selectedRoster < deselectedRoster
-      }"
-    >
-      <div>
-        <h3>{{ team.name | uppercase }} Roster</h3>
-        <ul class="list-group list-group-flush">
-          <li
-            *ngFor="let player of team.roster"
-            class="list-group-item"
-            style="background-color: #c8553d;"
-          >
-            <a class="players" routerLink="/players/{{ player.id }}">
-              <span>{{ player.name }}</span>
-            </a>
-          </li>
-        </ul>
+<div class="cards-container">
+  <div *ngFor="let player of roster" class="player-card">
+    <div class="card-photo-container">
+      <img
+        *ngIf="player.team_id === 1 && !player.player_photo"
+        src="../../assets/woof-logo.svg"
+        class="team-logo"
+      />
+      <img
+        *ngIf="player.team_id === 2 && !player.player_photo"
+        src="../../assets/woof-logo.svg"
+        class="team-logo"
+      />
+      <img
+        *ngIf="player.team_id === 3 && !player.player_photo"
+        src="../../assets/whiplash-logo-simple-dark.svg"
+        class="team-logo"
+      />
+      <img
+        *ngIf="player.player_photo"
+        src="{{ player.player_photo }}"
+        class="team-logo"
+      />
+      <div class="player-info-container">
+        <p class="player-info">
+          No. {{ player.jersey_number }}<br />
+          Year: {{ player.year }}<br />
+          Position: {{ player.position }}<br />
+          Favorite Food: {{ player.fav_food }}
+        </p>
       </div>
     </div>
+    <div class="player-name">
+      <h4>{{ player.name }}</h4>
+    </div>
   </div>
 </div>
-
-<!-- <div *ngIf="team; else elseBlock" class="container mt-4">
-  <div id="roster-list-container">
-    <h3>{{ team.name | uppercase }} Roster</h3>
-    <ul class="list-group list-group-flush">
-      <li
-        *ngFor="let player of team.roster"
-        class="list-group-item"
-        style="background-color: #c8553d;"
-      >
-        <a class="roster" routerLink="/players/{{ player.id }}">
-          <span>{{ player.name }}</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-<ng-template #elseBlock
-  ><div class="container span4 mt-4">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Sed arcu non odio
-      euismod lacinia at. Pharetra diam sit amet nisl. Egestas purus viverra
-      accumsan in nisl nisi scelerisque eu ultrices. Ut sem viverra aliquet eget
-      sit amet. Odio ut sem nulla pharetra diam sit. Quis commodo odio aenean
-      sed adipiscing diam donec adipiscing tristique. Ut consequat semper
-      viverra nam libero justo laoreet sit. Nunc id cursus metus aliquam
-      eleifend mi in nulla. Duis at tellus at urna. Varius vel pharetra vel
-      turpis nunc eget lorem dolor sed. Nisl purus in mollis nunc sed id semper
-      risus. Varius morbi enim nunc faucibus a pellentesque sit amet. Gravida
-      dictum fusce ut placerat orci nulla. Cras semper auctor neque vitae tempus
-      quam pellentesque. Ipsum suspendisse ultrices gravida dictum fusce ut
-      placerat orci. Consectetur a erat nam at lectus urna duis convallis
-      convallis. Odio pellentesque diam volutpat commodo sed egestas egestas
-      fringilla. Sodales neque sodales ut etiam sit. Quam adipiscing vitae proin
-      sagittis nisl. Adipiscing at in tellus integer feugiat scelerisque varius
-      morbi enim. Lectus proin nibh nisl condimentum id venenatis a condimentum.
-      Justo eget magna fermentum iaculis eu. Sollicitudin ac orci phasellus
-      egestas tellus rutrum tellus pellentesque. Ut ornare lectus sit amet est
-      placerat in egestas. Volutpat odio facilisis mauris sit amet massa vitae
-      tortor. Non tellus orci ac auctor augue mauris augue neque gravida.
-      Consectetur adipiscing elit ut aliquam purus sit amet luctus. Sagittis
-      vitae et leo duis ut diam quam nulla porttitor. Duis ultricies lacus sed
-      turpis tincidunt id aliquet risus feugiat. Vel orci porta non pulvinar
-      neque laoreet suspendisse interdum consectetur. Iaculis at erat
-      pellentesque adipiscing commodo. Amet aliquam id diam maecenas ultricies
-      mi. A lacus vestibulum sed arcu non odio euismod lacinia. Ultricies
-      integer quis auctor elit sed vulputate mi sit. Et netus et malesuada fames
-      ac turpis egestas. Nibh nisl condimentum id venenatis a condimentum vitae.
-      Metus aliquam eleifend mi in. Pharetra pharetra massa massa ultricies mi
-      quis. Morbi tristique senectus et netus et malesuada fames ac. Elit
-      scelerisque mauris pellentesque pulvinar pellentesque habitant. Cras
-      pulvinar mattis nunc sed blandit libero. Diam phasellus vestibulum lorem
-      sed risus ultricies tristique. Risus pretium quam vulputate dignissim.
-      Consequat id porta nibh venenatis cras sed felis. Ultrices eros in cursus
-      turpis massa tincidunt dui. Nullam ac tortor vitae purus faucibus ornare
-      suspendisse sed. Ornare lectus sit amet est placerat in. Mattis aliquam
-      faucibus purus in massa tempor nec feugiat nisl. Dictum non consectetur a
-      erat nam at. Ornare arcu dui vivamus arcu felis. Sed libero enim sed
-      faucibus turpis in. Egestas sed tempus urna et pharetra pharetra massa.
-      Tristique nulla aliquet enim tortor. Lacus viverra vitae congue eu
-      consequat ac. Scelerisque eu ultrices vitae auctor eu augue. Convallis a
-      cras semper auctor neque. Magna fermentum iaculis eu non diam phasellus.
-      Egestas pretium aenean pharetra magna ac placerat. Morbi tristique
-      senectus et netus et malesuada. Eget nulla facilisi etiam dignissim diam
-      quis enim lobortis scelerisque. Ut tristique et egestas quis ipsum
-      suspendisse ultrices gravida. Libero enim sed faucibus turpis in.
-      Scelerisque fermentum dui faucibus in. Orci dapibus ultrices in iaculis
-      nunc sed augue. Consequat semper viverra nam libero justo laoreet sit.
-      Orci phasellus egestas tellus rutrum tellus pellentesque. Purus sit amet
-      volutpat consequat mauris nunc. Id consectetur purus ut faucibus pulvinar
-      elementum integer enim neque. Volutpat blandit aliquam etiam erat velit
-      scelerisque in. Vulputate ut pharetra sit amet aliquam. Vitae nunc sed
-      velit dignissim sodales ut eu sem integer. Risus at ultrices mi tempus.
-      Hac habitasse platea dictumst quisque. Tellus in metus vulputate eu
-      scelerisque felis imperdiet proin fermentum. Sit amet facilisis magna
-      etiam tempor orci eu lobortis elementum. Vivamus arcu felis bibendum ut
-      tristique et egestas. Diam quis enim lobortis scelerisque. Sem integer
-      vitae justo eget. Arcu vitae elementum curabitur vitae nunc sed velit
-      dignissim sodales. Consequat mauris nunc congue nisi vitae suscipit
-      tellus. Ullamcorper a lacus vestibulum sed. Lacinia at quis risus sed
-      vulputate odio ut enim. Arcu dui vivamus arcu felis bibendum ut. Euismod
-      in pellentesque massa placerat duis. Mauris ultrices eros in cursus turpis
-      massa tincidunt. Ac turpis egestas sed tempus urna et pharetra. Nascetur
-      ridiculus mus mauris vitae ultricies leo integer malesuada.
-    </p>
-  </div></ng-template
-> -->

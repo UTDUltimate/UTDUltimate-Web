@@ -1,95 +1,79 @@
-h3 {
-  font: 24px 'Roboto', sans-serif;
-  color: #fffffc;
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.players,
-p {
-  font: 14px 'Roboto', sans-serif;
-  color: #fffffc;
+.player-card {
+  width: 250px;
+  height: 300px;
+  margin: 15px;
+  background-color: #d86f59;
 }
 
-.selected-container {
-  width: 960px;
-  margin: 0 auto 0;
+.card-photo-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
 }
 
-.rosters-container {
-  width: 2880px;
-  margin: 0 auto 0;
+.team-logo {
+  width: 100%;
+  max-height: 250px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.card-photo-container:hover>.team-logo {
+  filter: blur(11px);
+  -webkit-filter: blur(11px);
+}
+
+.player-info-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background-color: rgba(200, 85, 61, 0.7);
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.active {
-  left: 0;
+.player-info {
+  font: 16px "Oxygen Mono", sans-serif;
 }
 
-.team-roster-container {
-  width: 960px;
+.card-photo-container:hover>.player-info-container {
+  opacity: 1;
 }
 
-.selected-inc {
-  position: relative;
-  left: 0px;
-  animation: slide-in-right 2s 0s forwards;
+.player-name {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.selected-dec {
-  position: relative;
-  left: -960px;
-  animation: slide-in-left 2s 0s forwards;
-}
-
-.deselected-inc {
-  position: relative;
-  left: 0px;
-  animation: slide-out-left 2s 0s forwards;
-}
-
-.deselected-dec {
-  position: relative;
-  left: -960px;
-  animation: slide-out-right 2s 0s forwards;
-}
-
-.hidden {
-  display: none;
-}
-
-@keyframes slide-in-right {
-
-  to {
-    transform: translate(-960px);
-  }
-}
-
-@keyframes slide-in-left {
-  to {
-    transform: translate(960px);
-  }
-}
-
-@keyframes slide-out-left {
-  to {
-    transform: translate(-960px);
-  }
-}
-
-@keyframes slide-out-right {
-  to {
-    transform: translate(960px);
-  }
-}
-
-@keyframes slide-out-left-hide {
-  99% {
-    transform: translate(-960px);
-  }
-
-  100% {
-    display: none;
-  }
+h4 {
+  font: 20px "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.145em;
+  color: #fffffc;
+  margin: auto;
 }

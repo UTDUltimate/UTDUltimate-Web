@@ -1,3 +1,24 @@
+.comets {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+:host-context(.bg-red) .comets {
+  background-color: #C8553D;
+}
+
+:host-context(.bg-teal) .comets {
+  background-color: #588B8B;
+}
+
+:host-context(.bg-peach) .comets {
+  background-color: #FFD5C2;
+}
+
 #s-comet-black {
   position: fixed;
   width: 474.05px;
