@@ -15,10 +15,14 @@ import { TeamHeaderNavComponent } from "./roster-page/team-header-nav/team-heade
 import { NavbarComponent } from "./navbar/navbar.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatTabsModule } from "@angular/material/tabs";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { SlideShowComponent } from "./roster-page/slide-show/slide-show.component";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { AmplifyAngularModule, AmplifyService } from "aws-amplify-angular";
+import { FormsModule } from "@angular/forms";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { AmplifyAngularModule, AmplifyService } from "aws-amplify-angular";
     }),
     BrowserAnimationsModule,
     MatExpansionModule,
+    MatTabsModule,
     AmplifyAngularModule,
+    MatTooltipModule,
+    FormsModule,
+    MatSnackBarModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
