@@ -9,6 +9,12 @@ import { TeamService } from "../services/team.service";
 })
 export class RosterPageComponent implements OnInit {
   teams: Team[];
+  navHeaders: Array<{ key: number; name: string }>;
+  rosterSections: Array<{
+    key: number;
+    title: string;
+    roster: Array<any>;
+  }>;
 
   constructor(private teamService: TeamService) {}
 
@@ -17,6 +23,25 @@ export class RosterPageComponent implements OnInit {
   }
 
   getTeams(): void {
-    this.teamService.getTeams().subscribe((teams) => (this.teams = teams));
+    this.teamService.getTeams().subscribe((teams) => {
+      this.teams = teams;
+      this.setNav();
+      this.getRosters();
+    });
+  }
+
+  setNav(): void {
+    this.navHeaders = this.teams.map((team) => ({
+      key: team.id,
+      name: team.name + " Roster",
+    }));
+  }
+
+  getRosters(): void {
+    this.rosterSections = this.teams.map((team) => ({
+      key: team.id,
+      title: team.name + " Roster",
+      roster: team.roster,
+    }));
   }
 }
