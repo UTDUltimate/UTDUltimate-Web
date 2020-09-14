@@ -1,11 +1,11 @@
 <ul class="nav justify-content-center">
-  <li *ngFor="let team of teams" class="nav-item">
+  <li *ngFor="let header of headerItems" class="nav-item">
     <a
-      id="team-nav-custom"
-      [ngClass]="{ 'nav-link': true, active: activeTeam === team.id }"
-      (click)="setActive(team.id)"
+      id="nav-custom"
+      [ngClass]="{ 'nav-link': true, active: currentlyActive === header.key }"
+      (click)="setActive(header.key)"
     >
-      {{ team.name }} Roster
+      {{ header.name }}
     </a>
   </li>
 </ul>

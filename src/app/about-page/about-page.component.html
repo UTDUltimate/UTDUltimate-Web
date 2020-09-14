@@ -14,12 +14,28 @@
                 <li>Spring Club Sports Banquet</li>
             </ul><hr />
 
-          <div class="col-4">
-              <h3>Woof A</h3>
-              <p>Established in 2008, initally named D-TEX, the team re-branded in 2016 to Woof. Since then, the team has been focused on becoming a nationally competitive team. Over the past four years, Woof has been consistently achieving better and better seasonal results. In the most recent year, 2020, Woof beat two top 10 national teams - Carleton and Ohio State.</p>
-              <h4>Practice Information:</h4>
-              <p>Monday, Wednesdays 7-10pm @ UTD Soccer Field</p>
-          </div>
+        <mat-tab-group mat-align-tabs="center" dynamicHeight>
+            <mat-tab label="Annual Events">
+                <p *ngFor="let event of events"> {{ event }}</p>
+            </mat-tab>
+            <mat-tab label="Whiplash">
+                <p>Established in ?, initally named Monstars, the team re-branded in 2019 to Whiplash.</p>
+                <br />
+                <p>Fall 2020 Practices are currently suspended till further notice. Email <u>utdwomensultimate13@gmail.com</u> for more information.</p>
+            </mat-tab>
+            <mat-tab label="Woof A">
+                <p>Established in 2008, initally named D-TEX, the team re-branded in 2016 to Woof. Since then, the team has been focused on becoming a nationally competitive team. Over the past four years, Woof has been consistently achieving better and better seasonal results. In the most recent year, 2020, Woof beat two top 10 national teams - Carleton and Ohio State.</p>
+                <br />
+                <p>Fall 2020 Practices are currently suspended till further notice. Email <u>utdfrisbee@gmail.com</u> for more information.</p>
+            </mat-tab>
+            <mat-tab label="Woof B">
+                <p>Established in 2017, Woof B is a competitive development team, one of the best in the DFW area.</p>
+                <br />
+                <p>Fall 2020 Practices are currently suspended till further notice. Email <u>utdfrisbee@gmail.com</u> for more information.</p>
+            </mat-tab>
+        </mat-tab-group>
+
+        <hr />
 
         <div style="margin-bottom: 20px">
             <h1>FAQ's</h1>

@@ -15,10 +15,15 @@ import { TeamHeaderNavComponent } from "./roster-page/team-header-nav/team-heade
 import { NavbarComponent } from "./navbar/navbar.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatTabsModule } from "@angular/material/tabs";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { CarouselComponent } from "./carousel/carousel.component";
+import { SlideShowComponent } from "./roster-page/slide-show/slide-show.component";
+import { MatTooltipModule } from "@angular/material/tooltip";
+import { FormsModule } from "@angular/forms";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -33,6 +38,7 @@ import { CarouselComponent } from "./carousel/carousel.component";
     TeamHeaderNavComponent,
     ContactUsComponent,
     CarouselComponent,
+    SlideShowComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,11 @@ import { CarouselComponent } from "./carousel/carousel.component";
     BrowserAnimationsModule,
     MatExpansionModule,
     AmplifyAngularModule,
-    NgModule
+    NgModule,
+    MatTabsModule,
+    MatTooltipModule,
+    FormsModule,
+    MatSnackBarModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
