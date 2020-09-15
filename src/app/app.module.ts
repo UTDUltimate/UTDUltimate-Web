@@ -25,6 +25,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { FormsModule } from "@angular/forms";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     TeamHeaderNavComponent,
     ContactUsComponent,
     CarouselComponent,
-    SlideShowComponent,
+    SlideShowComponent
   ],
   imports: [
     BrowserModule,
@@ -50,11 +51,10 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     BrowserAnimationsModule,
     MatExpansionModule,
     AmplifyAngularModule,
-    NgModule,
     MatTabsModule,
     MatTooltipModule,
     FormsModule,
-    MatSnackBarModule,
+    MatSnackBarModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
