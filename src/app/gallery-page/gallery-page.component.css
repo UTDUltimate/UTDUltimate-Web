@@ -1,0 +1,46 @@
+.center {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+hr {
+    background-color: white;
+}
+
+.example-card {
+    max-width: 400px;
+    min-height: 540px;
+    border-radius: 14px;
+  }
+
+.header-image-1 {
+    background-image: url(../../assets/gallery-photos/whiplash_logo.jpg);
+    background-size: cover;
+}
+
+.header-image-2 {
+    background-image: url(../../assets/gallery-photos/woof_logo.jpg);
+    background-size: cover;
+}
+
+.header-image-3 {
+    background-image: url(../../assets/gallery-photos/woof_logo.jpg);
+    background-size: cover;
+}
+
+.mat-card-image:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,1), 
+                0 2px 0px 0 rgba(0,0,0,1), 
+                0 8px 12px 0 rgba(0,0,0,1);
+    margin-left: -21px;
+    margin-right: -30px;
+    position: relative;
+    width: 360px;
+    border-radius: 14px;
+}
