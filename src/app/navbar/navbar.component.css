@@ -10,3 +10,8 @@
 .active-link {
     font-weight: bold;
 }
+
+.call-to-action {
+    border-radius: 5px;
+    background-color: #ffc06a;
+}
