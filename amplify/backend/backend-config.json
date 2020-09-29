@@ -1,75 +1,67 @@
 {
-  "function": {
-    "UltimateDynamoTriggerb6812bc2": {
-      "service": "Lambda",
-      "providerPlugin": "awscloudformation",
-      "build": true,
-      "dependsOn": [
-        {
-          "category": "storage",
-          "resourceName": "UltimateDynamo",
-          "attributes": [
-            "Name",
-            "Arn",
-            "StreamArn"
-          ]
+    "function": {
+        "UltimateDynamoTriggerb6812bc2": {
+            "service": "Lambda",
+            "providerPlugin": "awscloudformation",
+            "build": true,
+            "dependsOn": [
+                {
+                    "category": "storage",
+                    "resourceName": "UltimateDynamo",
+                    "attributes": [
+                        "Name",
+                        "Arn",
+                        "StreamArn"
+                    ]
+                }
+            ]
+        },
+        "UltimateLambdas": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [
+                {
+                    "category": "storage",
+                    "resourceName": "UltimateDynamo",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ],
+                    "attributeEnvMap": {
+                        "Name": "TABLE_NAME",
+                        "Arn": "TABLE_ARN"
+                    }
+                }
+            ]
         }
-      ]
     },
-    "UltimateLambdas": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "storage",
-          "resourceName": "UltimateDynamo",
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "attributeEnvMap": {
-            "Name": "TABLE_NAME",
-            "Arn": "TABLE_ARN"
-          }
+    "storage": {
+        "UltimateDynamo": {
+            "service": "DynamoDB",
+            "providerPlugin": "awscloudformation"
         }
-      ]
-    }
-  },
-  "storage": {
-    "UltimateDynamo": {
-      "service": "DynamoDB",
-      "providerPlugin": "awscloudformation"
-    }
-  },
-  "api": {
-    "UltimateAPI": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "UltimateLambdas",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
+    },
+    "api": {
+        "UltimateAPI": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "UltimateLambdas",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ]
         }
-      ]
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd"
+        }
     }
-  },
-  "hosting": {
-    "amplifyhosting": {
-      "service": "amplifyhosting",
-      "type": "cicd"
-    }
-  },
-  "auth": {
-    "ultimatewebsite4f671a4f": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false
-    }
-  }
 }
