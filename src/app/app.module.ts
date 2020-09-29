@@ -24,6 +24,10 @@ import { SlideShowComponent } from "./roster-page/slide-show/slide-show.componen
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { FormsModule } from "@angular/forms";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 @NgModule({
@@ -39,7 +43,8 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     TeamHeaderNavComponent,
     ContactUsComponent,
     CarouselComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    GalleryPageComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,11 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     MatTabsModule,
     MatTooltipModule,
     FormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule,
+    MatButtonModule,
+    MatTabsModule,
+    MatChipsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AmplifyService],
