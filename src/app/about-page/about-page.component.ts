@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FAQ } from './faq';
-import { AmplifyService } from 'aws-amplify-angular';
 
 @Component({
   selector: 'app-about-page',
@@ -22,11 +21,8 @@ export class AboutPageComponent implements OnInit {
     'Spring Club Sports Banquet'
   ];
 
-  constructor(private amplifyService: AmplifyService) { }
+  constructor() { }
 
-  ngOnInit(): void { 
-    console.log(this.amplifyService.api().get());
-
-  }
+  ngOnInit(): void {  }
 
 }
