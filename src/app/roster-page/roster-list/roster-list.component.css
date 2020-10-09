@@ -58,6 +58,7 @@
 
 .player-info {
   font: 16px "Oxygen Mono", sans-serif;
+  padding: 1rem;
 }
 
 .card-photo-container:hover>.player-info-container {
